@@ -37,6 +37,11 @@
             this.lbCaptainAway = new System.Windows.Forms.Label();
             this.lbStadium = new System.Windows.Forms.Label();
             this.lbCapacity = new System.Windows.Forms.Label();
+            this.MatchDetail = new System.Windows.Forms.DataGridView();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.lbTanggal = new System.Windows.Forms.Label();
+            this.lbSkor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.MatchDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // cbHome
@@ -120,11 +125,51 @@
             this.lbCapacity.TabIndex = 8;
             this.lbCapacity.Text = "Capacity : ";
             // 
+            // MatchDetail
+            // 
+            this.MatchDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MatchDetail.Location = new System.Drawing.Point(57, 233);
+            this.MatchDetail.Name = "MatchDetail";
+            this.MatchDetail.Size = new System.Drawing.Size(623, 150);
+            this.MatchDetail.TabIndex = 9;
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(299, 144);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 10;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // lbTanggal
+            // 
+            this.lbTanggal.AutoSize = true;
+            this.lbTanggal.Location = new System.Drawing.Point(279, 179);
+            this.lbTanggal.Name = "lbTanggal";
+            this.lbTanggal.Size = new System.Drawing.Size(52, 13);
+            this.lbTanggal.TabIndex = 11;
+            this.lbTanggal.Text = "Tanggal :";
+            // 
+            // lbSkor
+            // 
+            this.lbSkor.AutoSize = true;
+            this.lbSkor.Location = new System.Drawing.Point(296, 192);
+            this.lbSkor.Name = "lbSkor";
+            this.lbSkor.Size = new System.Drawing.Size(35, 13);
+            this.lbSkor.TabIndex = 12;
+            this.lbSkor.Text = "Skor :";
+            // 
             // lbCaptainHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbSkor);
+            this.Controls.Add(this.lbTanggal);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.MatchDetail);
             this.Controls.Add(this.lbCapacity);
             this.Controls.Add(this.lbStadium);
             this.Controls.Add(this.lbCaptainAway);
@@ -137,6 +182,7 @@
             this.Name = "lbCaptainHome";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormPraktikum_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.MatchDetail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +199,10 @@
         private System.Windows.Forms.Label lbCaptainAway;
         private System.Windows.Forms.Label lbStadium;
         private System.Windows.Forms.Label lbCapacity;
+        private System.Windows.Forms.DataGridView MatchDetail;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label lbTanggal;
+        private System.Windows.Forms.Label lbSkor;
     }
 }
 
